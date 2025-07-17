@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ruleta por Pantallas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div id="pantallaOpciones" class="pantalla">
+    <h1>Paso 1: Ingresar Opciones</h1>
+    <textarea id="opcionesInput" placeholder="Ej: Pizza, Arepa, Empanada"></textarea>
+    <button id="actualizarBtn">Continuar a Ruleta</button>
+  </div>
+
+  <div id="pantallaRuleta" class="pantalla" style="display: none;">
+    <h1>Paso 2: Girar Ruleta</h1>
+    <div class="arrow">▲</div>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <button id="toggleButton">Iniciar</button>
+    <button id="volverBtn">← Volver</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
